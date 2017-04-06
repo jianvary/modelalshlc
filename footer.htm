@@ -1,0 +1,81 @@
+<div class="footer ">
+<div class="wrap">
+    <div class="row">
+    	<div class="footer50">
+        	<div class="footer-logo"> 阿里山黑龙茶</div>
+            <div class="guest">
+            	<form method="post" action="/plus/guestbook1.php" name="form1">
+                 <input type='hidden' name='action' value='save' />
+           			<div class="name"> 
+              			姓名：<input type="text"  name="uname"  value="底部留言" />
+           			</div> 
+            		<div class="phone">
+              			<input type="text"  name="qq"   value="  联系电话" onFocus="if(this.value=='  联系电话'){this.value='';}" onBlur="if(this.value==''){this.value='  联系电话';}" />
+                            
+            		</div>
+            		<div class="submit"><input type="submit" name="submit"  value="提交"/></div>
+            	</form>
+            </div>
+            <div class="address">
+          		地址：广州市白云区云城南二路167号723-728<br />
+                广州强邦投资管理有限公司
+        	</div>
+        </div>
+        <div class="footer50"> 
+        	<h2 >CONTACT US</h2>
+            <div class="footer-right">
+                <a href="/" >网站首页</a> &nbsp;&nbsp; <a href="/about/"> 公司简介</a> &nbsp;&nbsp; <a href="/product/">产品展示</a> &nbsp;&nbsp; <a  href="/xingxiang/">形象</a>&nbsp;&nbsp;
+                <a href="/news/" >新闻中心</a> &nbsp;&nbsp; <a href="/project/">项目优势</a> &nbsp;&nbsp; <a href="/contact/">联系我们</a> &nbsp;&nbsp; <a  href="/contact/">联系留言</a>
+            </div>
+            <div class="footer-phone">
+                <div class="pad" style="float:left; margin-top:-10px; margin-right:10px;"><img src="/templets/pc/images/phoneBig.png" width="50" height="60" />
+                </div>400-8229-383
+            </div>
+        </div> 
+    </div>
+</div>
+</div>
+
+<div class="footer-down">
+    COPYRIGHT @ 2016 ALSHLC CO.,LIMITED.ALL RIGHTS RESERVED. &nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn" target="_blank" style="color:#fff;">粤ICP备13048739号-5</a>
+</div>
+
+<script type="text/javascript">
+$(function() {
+    $.fn.toTop = function(options) {
+        var defaults = {
+            showHeight: 150,
+            speed: 1000
+        };
+        var options = $.extend(defaults, options);
+        $("body").prepend("<div id='totop'><a></a></div>");
+        var $toTop = $(this);
+        var $top = $("#totop");
+        var $ta = $("#totop a");
+        $toTop.scroll(function() {
+            var scrolltop = $(this).scrollTop();
+            if (scrolltop >= options.showHeight) {
+                $top.show()
+            } else {
+                $top.hide()
+            }
+        });
+        $ta.hover(function() {
+            $(this).addClass("cur")
+        }, function() {
+            $(this).removeClass("cur")
+        });
+        $top.click(function() {
+            $("html,body").animate({
+                scrollTop: 0
+            }, options.speed)
+        })
+    }
+});
+$(function() {
+    $(window).toTop({
+        showHeight: 100,
+        speed: 500
+    })
+});
+</script>

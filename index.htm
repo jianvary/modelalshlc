@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <link href="/templets/pc/css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+{dede:include filename="head.htm"/}
+{dede:include filename="banner.htm"/}
+{dede:include filename="tongPhone.htm"/}
+
+<div class="cont marginTop30">
+    <div class="wrap tongTitle">
+          <h2>{dede:include filename="tongTitleH2.htm"/}</h2>
+          <h3>PRODUCT DISPLAY</h3>
+          <p>产品展示</p>
+    </div>
+</div>
+
+<div class="cont marginTop10">
+    <div class="wrap">
+        <div class="product">
+            <ul>
+                {dede:arclist typeid="2" type="image." row="6" limit='0,6' noflag='h'}
+                <li>
+                    <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                        [field:image /]
+                    </a>
+                    <span>
+                        <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">[field:title /]</a>
+                    </span>
+                </li>
+                {/dede:arclist}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="cont marginTop30">
+    <div class="wrap tongTitle">
+          <h2>{dede:include filename="tongTitleH2.htm"/}</h2>
+          <h3>IMAGE DISPLAY</h3>
+          <p>形象展示</p>
+    </div>
+</div>
+
+<div class="cont marginTop20">
+    <div class="wrap">
+        <div class="bigImg">
+            {dede:arclist typeid="3,2" type="image." row="1" flag="h"}
+                <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                        [field:image /]
+                </a>
+            {/dede:arclist}
+        </div>
+    </div>
+</div>
+
+<div class="cont marginTop10">
+    <div class="wrap">
+        <div class="product">
+            <ul>
+                {dede:arclist typeid="3,2" type="image." row="6" limit='0,6' noflag='h'}
+                <li>
+                    <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">
+                        [field:image /]
+                    </a>
+                    <span>
+                        <a href="[field:arcurl /]" title="[field:title function='htmlspecialchars(@me)'/]">[field:title /]</a>
+                    </span>
+                </li>
+                {/dede:arclist}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="cont marginTop30">
+    <div class="wrap tongTitle">
+          <h2>{dede:include filename="tongTitleH2.htm"/}</h2>
+          <h3>ACTIVITY NEWS</h3>
+          <p>新闻中心</p>
+    </div>
+</div>
+
+{dede:include filename="tongNewsList.htm"/}
+
+<div class="cont marginTop20">
+    <div class="wrap">
+        <div class="moretitle">
+            <ul>
+                <li></li><li></li><li></li><li></li>
+            </ul>
+            <p class="left">
+                <a href="#">
+                    查看更多合作动态
+                </a>
+            </p>
+            <p class="right">+</p>
+        </div>
+    </div>
+</div>
+
+<div class="cont marginTop30">
+    <div class="wrap tongTitle">
+          <h2>{dede:include filename="tongTitleH2.htm"/}</h2>
+          <h3>CONTACT US</h3>
+          <p>联系我们</p>
+    </div>
+</div>
+
+{dede:include filename="tongLiuYang.htm"/}
+       
+{dede:include filename="footer.htm"/}
+          
+</body>
+</html>

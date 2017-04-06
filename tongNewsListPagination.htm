@@ -1,0 +1,35 @@
+<link href="/templets/pc/font/iconfont.css" rel="stylesheet" type="text/css">
+<div class="cont marginTop10">
+    <div class="wrap">
+          {dede:list pagesize='10' titlelen="36"}
+            <div class="col-sm-3">
+            	<a class="news-box" title="[field:title function='htmlspecialchars(@me)'/] " href="[field:arcurl /]">
+                	<div class="news-a">
+                    [field:image/]
+                    </div>
+                    <div class="news-b">
+                    <i class="icon iconfont">&#xe64c;</i><b>[field:pubdate function="GetDateMK(@me)"/]</b><i class="icon iconfont">&#xe63e;</i><b>[field:click/]</b>
+                    </div>
+                    <div class="news-c">
+                    [field:title/]
+                    </div>
+                    <div class="news-d">
+                    [field:description function='cn_substr(@me,100)'/]...
+                    </div>
+                </a>
+            </div>
+          {/dede:list}
+    </div>
+</div>
+
+<div class="cont marginTop10">
+    <div class="wrap">
+    	<div class="pagesTong">
+        	<div class="pageCon">
+               <ul class="pagelist">
+                {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+               </ul>
+      		</div>
+        </div>
+	</div>
+</div>

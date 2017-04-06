@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <link href="/templets/pc/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/templets/pc/css/sub.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+
+{dede:include filename="banner.htm"/}
+
+<div class="cont marginTop30">
+    <div class="wrap tongTitle">
+          <h2>{dede:include filename="tongTitleH2.htm"/}</h2>
+          <h3>ACTIVITY NEWS</h3>
+          <p>新闻中心</p>
+    </div>
+</div>
+
+<link href="/templets/pc/font/iconfont.css" rel="stylesheet" type="text/css">
+<div class="cont marginTop10">
+    <div class="wrap">
+          {dede:list pagesize='8' titlelen="36"}
+            <div class="col-sm-3">
+            	<a class="news-box" title="[field:title function='htmlspecialchars(@me)'/] " href="[field:arcurl /]">
+                	<div class="news-a">
+                    [field:image/]
+                    </div>
+                    <div class="news-b">
+                    <i class="icon iconfont">&#xe64c;</i><b>[field:pubdate function="GetDateMK(@me)"/]</b><i class="icon iconfont">&#xe63e;</i><b>[field:click/]</b>
+                    </div>
+                    <div class="news-c">
+                    [field:title/]
+                    </div>
+                    <div class="news-d">
+                    [field:description function='cn_substr(@me,100)'/]...
+                    </div>
+                </a>
+            </div>
+          {/dede:list}
+    </div>
+</div>
+
+<div class="cont marginTop10">
+    <div class="wrap">
+    	<div class="pagesTong">
+        	<div class="pageCon">
+               <ul class="pagelist">
+                {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+               </ul>
+      		</div>
+        </div>
+	</div>
+</div>
+    
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+

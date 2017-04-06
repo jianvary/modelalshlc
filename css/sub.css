@@ -1,0 +1,55 @@
+/***contentPage**/
+.marginTopBottom20{margin:20px auto;}
+.contentPage{width:1200px; height:auto; }
+.contentPage .left{width:800px; height:auto; float:left; margin-bottom:30px;}
+.contentPage .left .nav{width:800px; height:50px; float:left; text-align:left; border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+.contentPage .left .nav p{margin-left:20px; font-size:16px; line-height:50px; color:#000; font-weight:bold;}
+.contentPage .left .nav p a{text-decoration:none; color:#000;}
+.contentPage .left .nav p a:hover{color:#666;}
+.contentPage .left .title{width:800px; height:60px; line-height:30px; float:left; margin-top:50px; font-size:24px;}
+.contentPage .left .title p{width:700px; margin-left:50px; text-align:center; overflow:hidden;}
+.contentPage .left .title p a{text-decoration:none; color:#000;}
+.contentPage .left .time{width:800px; height:20px; font-size:12px; line-height:20px; color:#000; float:left; margin-top:5px; text-align:center;}
+.contentPage .left .time a{text-decoration:none; color:#000;}
+.contentPage .left .time ul{list-style:none; width:800px; display:inline; text-align:center; float:left; margin-left:200px;}
+.contentPage .left .time ul li{ float:left;}
+.contentPage .left .content{width:800px; font-size:14px; line-height:25px; float:left; margin-top:30px; }
+.contentPage .left .content a{text-decoration:none; color: #000;}
+.contentPage .left .content a u{text-decoration:none; color: #000;}
+.contentPage .right{width:350px; height:auto; float:right; margin-bottom:30px;}
+.contentPage .right .nav{width:350px; border-bottom:1px solid #ccc; height:40px; line-height:40px; text-align:center;}
+.contentPage .right .nav p{width:100px; height:40px; background:#ccc; margin-left:130px;}
+.contentPage .right .title{width:350px; height:auto; float:left; margin-top:20px;}
+.contentPage .right .title ul{list-style:none; float:left;}
+.contentPage .right .title ul li{list-style:none; width:350px; border-bottom:1px dashed #ccc;  float:left; line-height:40px; text-align:center;}
+.contentPage .right .title ul li a{text-decoration:none; color:#000;}
+
+.contentPage .leftTwo{width:1200px; height:auto; float:left; margin-bottom:20px;}
+.contentPage .leftTwo .nav{width:1200px; height:50px; float:left; text-align:left; border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+.contentPage .leftTwo .nav p{margin-left:20px; font-size:16px; line-height:50px; color:#000; font-weight:bold;}
+.contentPage .leftTwo .nav p a{text-decoration:none; color:#000;}
+.contentPage .leftTwo .nav p a:hover{color:#666;}
+
+.qAaCon{width:1210px; height:auto;}
+.qAaCon p{width:600px; height:190px; border:1px solid #00ACA8; border-left:none; float:left;}
+.qAaCon p span{width:560px; float:left; margin-left:20px;}
+.qAaCon p span.time{width:560px; float:left; margin-left:20px; line-height:30px;}
+.qAaCon p span.title{width:560px; float:left; margin-left:20px; line-height:50px; font-weight:bold; font-size:24px; color:#00ACA8; }
+.qAaCon p span.title a{text-decoration:none; color:#00ACA8;}
+.qAaCon p span.title a:hover{color:#666;}
+.qAaCon p span.con{width:560px; float:left; margin-left:20px; line-height:25px;}
+.qAaCon p span.tips{width:560px; float:left; margin-left:20px; line-height:35px; color:#00ACA8;}
+.qAaCon p span.tips a{text-decoration:none; color:#00ACA8;}
+.qAaCon p span.tips a:hover{color:#666;}
+
+.pagesTong{width:980px; height:auto; float:left; text-align:left;  overflow:hidden;}
+
+.contentPage .left .pages{width:800px; height:auto; float:left; text-align:left;  overflow:hidden;}
+.pageCon ul{float:left;padding:12px 0px 12px 16px; list-style:none;}
+.pageCon ul li{float:left;font-family:Tahoma;line-height:17px;margin-right:6px;border:1px solid #E9E9E9;}
+.pageCon ul li a{float:left;padding:2px 4px 2px;color:#555;display:block;}
+.pageCon ul li a:hover{color:#690;text-decoration:none;padding:2px 4px 2px;}
+.pageCon ul li.thisclass,
+.pageCon ul li.thisclass a,.pagebox ul li.thisclass a:hover{background-color:#F8F8F8;padding:2px 4px 2px;font-weight:bold;}
+.pageCon .pageinfo{line-height:21px;padding:12px 10px 12px 16px;color:#999;}
+.pageCon .pageinfo strong{color:#555;font-weight:normal;margin:0px 2px;}
